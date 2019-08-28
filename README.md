@@ -1,9 +1,9 @@
 # Ejercicios Estructuras de Control
 
-Nombre:
+Nombre: Jose Antonio Chavez Rivera
 --
 
-Github Username:
+Github Username: josechavezri
 --
 
 Instrucciones:
