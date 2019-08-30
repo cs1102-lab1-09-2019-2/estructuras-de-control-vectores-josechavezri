@@ -23,6 +23,22 @@
 using namespace std;
 
 int main() {
-    float a, b, c, delta, x1, x2;
+    float a, b, c, delta, x1, x2, x ;
+    int y = 0;
+    cin>>a>>b>>c;
+    if(a == 0 || b == 0){
+        cout<<"no tiene solucion"; y= 1;}
+    if(a == 0){
+        cout<<"tiene una solucion:"<< c / b * -1; y = 1;}
+    if(pow(b,2) -4*a*c <0 ){
+        cout<<"no tiene solucion"; y = 1;}
+    if(y == 0){
+        x = pow(b,2);
+
+        x1 = -b + pow(float (x - 4*a*c), float(1/2))/2*a;
+        x2 = -b - pow(float (x - 4*a*c), float(1/2))/2*a;
+        cout<<"primer resultado: "<<x1<<"\n";
+        cout<<"segundo resultado: "<<x2<<"\n";
+    }
 
 }

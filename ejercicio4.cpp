@@ -11,10 +11,23 @@ Escribir un programa que imprima lo siguiente:
 */
 
 #include <iostream>
-using std::cout;
+using namespace std;
 
 int main() {
+    int numero, num, n = 1;
+    cin>>numero;
+    num = 2;
+    while(num <= numero){
+        n = 1;
+        for(int i = 0; i < num ; i++){
+            cout<<n;
+            n++;
+        }
+        for(int j = -1 ; j < (numero - n) ;j ++){
+            cout<<"*";
+        }
+        cout<<"\n";
 
-
-    return 0;
+        num++;
+    }
 }

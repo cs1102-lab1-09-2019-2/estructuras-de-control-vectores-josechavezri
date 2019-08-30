@@ -26,11 +26,16 @@ using std::cin;
 using std::invalid_argument;
 
 void mostrarMenu();
-int sumar(int a, int b);
-int restar(int a, int b);
-int multiplicar(int a, int b);
-float dividir(int a, int b);
-int modulo(int a, int b);
+int sumar(int a, int b){
+    return a + b;}
+int restar(int a, int b){
+    return a - b;}
+int multiplicar(int a, int b){
+    return a * b;}
+float dividir(int a, int b){
+    return a / b;}
+int modulo(int a, int b){
+    return a % b;}
 
 
 void mostrarMenu() {
@@ -41,9 +46,32 @@ void mostrarMenu() {
     cout<<"  2.- Resta\n";
     cout<<"  3.- Multiplicar\n";
     cout<<"  4.- Dividir\n";
-    cout<<"  6.- Modulo\n";
+    cout<<"  5.- Modulo\n";
 }
 
 int main() {
+    int b, c, a ;
+    mostrarMenu();
+    cin>>a;
+    if(a == 1){
+        cin>>b;
+        cin>>c;
+        cout<<sumar(b,c);}
+    if(a == 2){
+        cin>>b;
+        cin>>c;
+        cout<<restar(b,c);}
+    if(a == 3){
+        cin>>b;
+        cin>>c;
+        cout<<multiplicar(b,c);}
+    if(a == 4){
+        cin>>b;
+        cin>>c;
+        cout<<dividir(b,c);}
+    if(a == 5){
+        cin>>b;
+        cin>>c;
+        cout<<modulo(b,c);}
     return 0;
 }
